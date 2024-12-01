@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>L'appel des Pyrénées</title>
+</head>
+
+<body>
+
+    <header class="d-flex justify-content-between align-items-center">
+
+        <img class=margin src="img site/logo.png" id="logo">
+
+        <nav>
+            <ul class="d-flex margin">
+                <li>
+                    <a href="index.html">Accueil</a>
+                </li>
+
+                <li>
+                    <a href="https://meteofrance.com/meteo-montagne/pyrenees" target="_blank">Météo</a>
+                </li>
+
+                <li>
+                    <a href="https://www.lespyrenees.net/webcam" target="_blank">Webcams</a>
+                </li>
+
+                <li>
+                    <a href="https://www.myatlas.com/creer-un-carnet-de-voyage" target="_blank">Carnet de voyage</a>
+                </li>
+
+                <li>
+                    <a href="nous-contacter.html">Nous contacter</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="d-flex justify-content-center margin w-100">
+
+        <!-- le no-hover permet d'enlever l'effet grossisant sur la photo lorsque quelqu'un passe la souris dessus -->
+        <img class="w-100 no-hover" src="img site/Besoin d'aide.png"
+            alt="Image disant Besoin de renseignements? C'est ici!">
+    </section>
+
+    <main class=" d-flex align-items-center justify-content-center w-70">
+
+        <form class="d-flex justify-content-center">
+
+
+            <!-- formulaire d'inscription -->
+
+            <div class="padding-right padding-top padding-bottom">
+
+                <!-- <div class="message-error">
+                    <ul></ul>
+                </div>
+                <div class="message-success">
+                    Formulaire envoyé!
+                </div> -->
+
+                <div>
+                    <label for="pseudo"><b>Pseudo</b></label>
+                    <input type="text" name="pseudo" id="pseudo">
+                </div>
+
+                <!-- champs texte -->
+                <br>
+                <label for="name"><b>Nom</b></label>
+                <input type="text" name="name" id="name">
+
+                <br><br>
+                <label for="firstname"><b>Prénom</b></label>
+                <input type="text" name="firstname" id="firstname">
+
+                <!-- champs email -->
+                <div>
+                    <br>
+                    <label for="email"><b>E-mail</b></label>
+                    <input type="email" name="email" id="email">
+
+                </div>
+
+                <div>
+                    <br>
+                    <label for="password"><b>Mot de Passe</b></label>
+                    <input type="password" name="password" id="password">
+                </div>
+
+                <div>
+                    <br>
+                    <label for="password"><b>Vérification du mot de Passe</b></label>
+                    <input type="password" name="password2" id="password2">
+                </div>
+
+
+                <!-- champs date -->
+                <br><br>
+                <label for="date"><b>Date de naissance</b></label>
+                <input type="date" name="date" id="date">
+
+                <!-- champs tel -->
+                <br><br>
+                <label for="Tel"><b>Téléphone</b></label>
+                <input type="text" name="Tel" id="Tel">
+
+                <!-- pays -->
+                <!-- liste déroulante -->
+                <br><br>
+                <label for="country"><b>De quel pays venez-vous ?</b></label>
+                <select name="country" id="country">
+                    <option value="-">-</option>
+                    <option value="France">France</option>
+                    <option value="Portugal">Portugal</option>
+                    <option value="Espagne">Espagne</option>
+                    <option value="Allemagne">Allemagne</option>
+                    <option value="Royaume-Uni">Royaume-Uni</option>
+                    <option value="Belgique">Belgique</option>
+                    <option value="Pays-Bas">Pays-Bas</option>
+                    <option value="Autre">Autre</option>
+                </select>
+
+
+                <!-- Visite -->
+                <!-- choix unique -->
+                <br><br>
+                <p>
+                    <label for="choix"><b>Êtes-vous déjà venu dans les Pyrénées ?</b></label>
+                    <br><input type="radio" id="choix1" name="genre" value="Oui" /><label for="choix1">Oui</label>
+                    <br><input type="radio" id="choix2" name="genre" value="Non" /><label for="choix2">Non</label>
+                </p>
+            </div>
+
+            <div class="padding-left padding-bottom">
+                <!-- hobbies -->
+                <!-- choix multiples -->
+                <p>
+                    <br>
+                    <label for="option"><b>Quelles sont les activités qui vous intéressent ?</b></label> <br>
+                    <input type="checkbox" id="option1" name="" value="X" /><label for="option1">Randonnée</label><br />
+                    <input type="checkbox" id="option2" name="" value="X" /><label for="option2">VTT</label><br />
+                    <input type="checkbox" id="option3" name="" value="X" /><label for="option3">Escalade</label><br />
+                    <input type="checkbox" id="option4" name="" value="X" /><label for="option4">Canyoning</label> <br>
+                    <input type="checkbox" id="option5" name="" value="X" /><label for="option5">Parapente</label><br />
+                    <input type="checkbox" id="option6" name="" value="X" /><label
+                        for="option6">Thermalisme</label><br />
+                    <input type="checkbox" id="option7" name="" value="X" /><label for="option7">Observation de la faune
+                        et
+                        de la flore</label><br />
+                    <input type="checkbox" id="option8" name="" value="X" /><label
+                        for="option8">Ski/Snowboard</label><br />
+                    <input type="checkbox" id="option9" name="" value="X" /><label for="option9">Raquettes</label><br />
+                    <input type="checkbox" id="option10" name="" value="X" /><label for="option10">Trail
+                        Running</label><br />
+                    <input type="checkbox" id="option11" name="" value="X" /><label for="option11">Luge</label><br />
+                    <input type="checkbox" id="option12" name="" value="X" /><label for="option12">Autres
+                        précisez</label>
+                    <input type="text" name="précisez" id="précisez">
+                </p>
+
+                <!-- se présenter -->
+                <!-- zone pour écrire de long texte -->
+                <br><br>
+                <p><b>Votre demande, vos questions et commentaires</b></p>
+
+                <textarea id="pre" name="" rows="4" cols="50" maxlength="50">
+Ecrire ici
+</textarea>
+
+                <!-- champs file -->
+                <br><input type="file" ... />
+
+                <!-- un bouton pour soumettre ma demande -->
+                <br><br>
+                <button type="submit">Soumettre le formulaire</button>
+            </div>
+
+        </form>
+    </main>
+
+    <section class="d-flex justify-content-center w-100">
+
+        <!-- le no-hover permet d'enlever l'effet grossisant sur la photo lorsque quelqu'un passe la souris dessus -->
+        <img class="w-100 no-hover" src="img site/activités.png"
+            alt="Image des différentes activités disponible dans les Pyrénées">
+    </section>
+
+    <footer>
+        <div class="d-flex justify-content-between padding-top">
+            <div class="footer-column">
+                <h3>Découverte</h3>
+                <ul>
+                    <li><a href="#">Sites incontournables</a></li>
+                    <li><a href="#">Activités</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Informations pratiques</h3>
+                <ul>
+                    <li><a href="#">Itinéraires et accès</a></li>
+                    <li><a href="#">Hébergement et restauration</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Ressources</h3>
+                <ul>
+                    <li><a href="#">Cartes et guides</a></li>
+                    <li><a href="#">Conseils pour la randonnée</a></li>
+                    <li><a href="#">Conditions météo</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center margin no-hover">
+            <a href="#"><img class="w-25" src="img site/Instagram_icon.png.webp" alt="Logo Instagram"></a>
+            <a href="#"><img class="w-25" src="img site/Facebook_Logo_2023.png" alt="Logo Facebook"></a>
+            <a href="#"><img class="w-25"
+                    src="img site/new-twitter-x-logo-twitter-icon-x-social-media-icon-free-png.jpg" alt="Logo X"></a>
+        </div>
+
+        <p class="d-flex justify-content-center margin">&copy; L'appel des Pyrénées 2024</p>
+    </footer>
+
+    <script src="formulaire.js"></script>
+
+</body>
+
+</html>
